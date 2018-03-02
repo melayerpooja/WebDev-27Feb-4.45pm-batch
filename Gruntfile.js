@@ -7,10 +7,10 @@ grunt.initConfig({
         livereload: true
     },
     html: {
-        files: ['*.html', 'src/{,*/}/*.html', 'dashboard/*.html'],
+        files: ['*.html', '27Feb2018/*.html', '28Feb2018/*.html', '1Mar2018/*.html'],
     },
     css: {
-        files: ['*.css', 'styles/css/*.css'],
+        files: ['*.css', '27Feb2018/*.css', '28Feb2018/*.css', '1Mar2018/*.css'],
     }
 
 },

@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My page having basic html">
+    <meta name="keyword" content "html, css, web">
+    <title>My First page</title>
+    <link rel="shortcut icon" type="image/gif" href="../img/sqpurple.gif">
+    <style>
+        div {
+            max-width: 50%;
+            border: 1px solid gray;
+            text-align: center;
+            margin-left: 25%;
+        }
+    </style>
+    <script>
+           function  clicked(){
+                alert("I am clicked...!!!");
+            }
+        </script>
+</head>
+
+<body>
+
+
+    <div>
+        <h1>Forms</h1>
+        <h2>Login Form</h2>
+        <form method="GET" action="" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Login Information</legend>
+                <label for="unNm">Enter Username</label>
+                <!-- <input type="text" name="usNm" value="abc" disabled><br> -->
+                <!-- <input type="text" name="usNm" value="abc" readonly><br> -->
+                <!-- <input type="text" name="usNm"  placeholder="Enter username here" required><br> -->
+                <label for="pwd">Enter Password</label>
+                <!-- <input type="password" name="pwd" required><br /> -->
+                <input type="email">
+                <input type="number" min="2" max="10">
+                <br />
+                <input type="number" min="10" max="10">
+                <br />
+                <input type="tel">
+                <input type="tel" name="phn" onKeyDown="if(this.value.length==10 && event.keyCode!=8) return false;" />
+                <br>
+                <input type="radio" name="Gender">Female
+                <input type="radio" name="Gender">Male
+                <br/>
+                <label>Documents:</label>
+                <input type="checkbox" name="ssc" value="sscdocument">SSC Marklist
+                <input type="checkbox" name="hsc" value="hscdocument">HSC Marklist
+                <br />
+                <label>Select value</label>
+                <select name="selection" multiple>
+                    <option>First</option>
+                    <option>Second</option>
+                    <option>Third</option>
+                </select><br/>
+                <textarea rows="10" cols="25" autofocus></textarea>
+                <button type="submit">Login</button>
+                <button type="button" onclick="clicked()">Check</button>
+                <!-- <input type="submit" value="Submit"> -->
+            </fieldset>
+
+
+
+
+        </form>
+    </div>
+    
+</body>
+
+</html>
