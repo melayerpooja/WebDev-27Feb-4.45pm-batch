@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My page having basic html">
+    <meta name="keyword" content "html, css, web">
+    <title>Table</title>
+    <link rel="shortcut icon" type="image/gif" href="../img/sqpurple.gif">
+    <style>
+table, th, td{
+    border-bottom:1px solid black;
+    border-collapse: collapse;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 30px;
+}
+tr:hover{
+    background-color: gray;
+}
+/* tr:nth-child(even){
+    background-color: palevioletred;
+} */
+tr:nth-child(odd){
+    background-color: olivedrab;
+}
+body{
+    background-image: url('img/logo_html.png');
+    background-repeat: no-repeat;
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+}
+    </style>
+
+</head>
+
+<body>
+    <div style="overflow-x:auto;">
+<table>
+    <tr>
+        <th>no</th>
+        <th>name</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>name1</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>name2</td>
+    </tr>
+</table>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My page having basic html">
+    <meta name="keyword" content "html, css, web">
+    <title>Position</title>
+    <link rel="shortcut icon" type="image/gif" href="../img/sqpurple.gif">
+    <link rel="stylesheet" href="style.css">
+<style>
+    .staticPosition{
+        width: 150px;
+        height: 150px;
+        border: 5px solid palevioletred;
+    }
+    .relativePosition{
+        position: relative;
+        top: 50px;
+        left:50px;
+        width: 150px;
+        height: 150px;
+        border: 5px solid greenyellow;
+    }
+.fixedPosition{
+    position: fixed;
+    top:50px;
+    left: 200px;
+    width: 150px;
+    height:150px;
+    border: 5px solid black;
+}
+.absolutePosition{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 5px solid red;
+    top: 30px;
+    left: 30px;
+}
+.absolutePositions{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 5px solid red;
+    top: 30px;
+    left: 30px;
+}
+.stickyPosition{
+    position: sticky;
+    width: 150px;
+    height: 150px;
+    border: 5px solid blue;
+    top: 15px;
+}
+h2{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.overlap{
+    /* position: absolute; */
+    border: 5px solid gray;
+}
+</style>
+</head>
+
+<body>
+<div class="staticPosition">Static</div>
+<div class="stickyPosition">Sticky Position</div>
+<div class="relativePosition">Relative</div>
+<div class="fixedPosition">Fixed
+        <div class="absolutePositions">Absolute small</div>
+</div>
+<div class="absolutePosition">Absolute big</div>
+<div class="overlap">
+    <img src="img/logo_html.png">
+    <h2>html logo</h2>
+</div>
+
+
+</body>
+
+</html>
