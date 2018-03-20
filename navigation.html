@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navigation</title>
+    <style>
+    ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+background-color: gray;
+width: 10%;
+display: block;
+height: 100%;
+position: fixed; /* Make it stick, even on scroll */
+    overflow: auto;
+    }
+li{
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+li:hover{
+    background-color: goldenrod;
+}
+    li a{
+        display: block;
+        width: 50px;
+        padding: 10px 30px;
+       
+    }
+.active{
+    
+    background-color: black;
+}
+
+.active a{
+    color: white;
+}
+
+    
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="active"><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+</body>
+</html>
