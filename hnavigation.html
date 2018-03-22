@@ -6,52 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Navigation</title>
     <style>
-    ul{
-list-style-type: none;
-margin: 0;
-padding: 0;
-background-color: gray;
-width: 10%;
-display: block;
-height: 100%;
-position: fixed; /* Make it stick, even on scroll */
-    overflow: auto;
-    }
+ul{
+    list-style-type: none;
+    margin-right: 50px;
+   
+}  
 li{
-    border-bottom: 1px solid black;
-    text-align: center;
-}
-li:hover{
-    background-color: goldenrod;
-}
-    li a{
-        display: block;
-        width: 50px;
-        padding: 10px 30px;
-       
-    }
-.active{
+    float: left;
+    padding: 15px;
+    background-color: rgb(103, 165, 103);
     
-    background-color: black;
 }
-
-.active a{
-    color: white;
+li::after{
+    border-right: 2px solid black;
 }
-
-    
+a{
+    display: block;
+    color: black !important;
+}
+.myNav{
+    float: right;
+    margin: 50px;
+}
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 </head>
 <body>
-    <ul>
-        <li class="active"><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
-    </ul>
-    <div class="container">
-
+    <div class="myNav">
+            <ul>
+                    <li class="active"><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
     </div>
+    
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
